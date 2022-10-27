@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      <%= (typeof title != "undefined" ? title : "Page title") %>
+    </title>
+    {{ meta }}
+    <script type="module" src="/_scss/style.js"></script>
+    {{ head }}
+  </head>
+  <body>
+
+    <%- include('_partials/header'); -%>
+
+    {{ content }}
+
+    <%- include('_partials/footer'); -%>
+
+    {{ script }}
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

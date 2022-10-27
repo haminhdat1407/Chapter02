@@ -1,0 +1,72 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: $main-fonts;
+    font-size: 1.4rem;
+    min-width: $base-width;
+    line-height: 1.5;
+
+    @include sp {
+        min-width: 320px;
+    }
+}
+
+//-------------------------------------------------------
+main {
+    // padding: 0px 0 100px;
+}
+
+
+//-------------------------------------------------------
+.l-container {
+    width: $base-width;
+    margin: 0 auto;
+}
+
+//-------------------------------------------------------
+.c-mainvisual {
+    margin-top: 32px;
+    padding: 0;
+    background-image: url("/src/_public/assets/img/home-mainvisual.png");
+    background-color: #ccc;
+    height: 360px;
+    position: relative;
+
+    &1 {
+        position: relative;
+        top: 76%;
+        transform: translate(0%, -50%);
+        margin-left: 40px;
+
+        &__category {
+            padding: 6px 0;
+            background-color: #ffdfdf;
+            font-size: 16px;
+            font-weight: bold;
+            width: 129px;
+            text-align: center;
+            position: relative;
+
+        }
+
+        &__title {
+            margin-top: 13px;
+            color: #222;
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 415px;
+        }
+    }
+}
+
+.c-top {
+    margin-top: 22px;
+}
+
+.c-bottom {
+    padding: 6px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+

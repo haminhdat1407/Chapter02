@@ -1,0 +1,51 @@
+/*------------------------------------------------------------
+btn
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-viewmore.c-btn {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 1.6rem;
+    border: 2px solid #c3c3c3;
+    border-radius: 20px;
+    line-height: 1;
+
+    &__feature {
+        margin: 55px 0;
+        justify-content: flex-end;
+    }
+
+    &__blog {
+        margin-top: 46px;
+        
+    }
+
+    &__link {
+        margin-top: 4px;
+    }
+}
+
+.c-btn {
+    &__viewmore {
+        padding: 20px 96px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 2px solid #000;
+        border-radius: 4px;
+        color: #fff;
+    }
+
+    &__link {
+        padding: 28px 0;
+        font-size: 3.2rem;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 0.625;
+    }
+   
+}
+
+

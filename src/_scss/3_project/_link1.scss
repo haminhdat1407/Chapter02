@@ -1,0 +1,128 @@
+.p-link {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    &__img {
+        height: 185px;
+    }
+
+    &__mg {
+        margin-top: 16px;
+    }
+
+    &__list {
+        margin-top: 17px;
+        row-gap: 44px;
+
+        &2 {
+            row-gap: 15px;
+        }
+    }
+
+    &__item {
+        width: calc((100% - 30px * 2 ) /4);
+    }
+}
+
+.c-anchor {
+    display: flex;
+    column-gap: 50px;
+    margin-top: 32px;
+  
+    &__item {
+        font-size: 1.6rem;
+        width: calc((100% - 50px * 2 ) / 3);
+        border-radius: 5px;
+        background-color: rgb(0, 174, 239);
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f107";
+        }
+
+    }
+}
+
+.c-title {
+    font-size: 1.8rem;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    line-height: 1.111;
+    margin-top: 69px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 11px;
+}
+
+.c-content {
+    font-size: 1.4rem;
+    color: rgb(34, 34, 34);
+    line-height: 1.429;
+    font-weight: 500;
+    margin-top: 26px;
+    display: block;
+
+    &__underline {
+        text-decoration: underline;
+    }
+
+}
+
+.c-link2 {
+    margin-top: 52px;
+    line-height: 1.429;
+}
+
+.c-table {
+    margin-top: 29px;
+
+    &2 {
+        margin-top: 49px;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        color: rgb(34, 34, 34);
+        font-weight: bold;
+        line-height: 1.25;
+        padding: 10px 14px;
+        background-color: #ece6e6;
+    }
+
+    &__des {
+        margin-top: 20px;
+        font-size: 1.4rem;
+        color: rgb(34, 34, 34);
+        line-height: 1.429;
+    }
+    
+}
+
+table {
+    margin-top: 16px;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 9px 29px;
+
+}
+
+td:first-child {
+    padding: 10px 20px;
+}
+
+th {
+    background-color: #acd373;
+    border: 1px solid cccccc;
+    color: rgb(255, 255, 255);;
+}
+

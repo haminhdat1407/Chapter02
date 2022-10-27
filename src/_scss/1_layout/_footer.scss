@@ -1,0 +1,51 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer {
+    margin-top: 107px;
+   
+}
+
+.c-box {
+
+
+    display: flex;
+    padding: 34px 0;
+    column-gap: 44px;
+
+    &__title {
+        font-size: 1.4rem;
+        font-weight: bold;
+        border-bottom: 1px solid rgb(204, 204, 204);
+        padding-bottom: 4px;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        width: calc((100% - 44px * 2)/3);
+    }
+
+}
+
+.c-link {
+    margin-top: 2px;
+
+    &__item {
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #000;
+            margin-right: 5px;
+        }
+    }
+
+}
+
+.c-copyright {
+    border-top: 1px solid #d2d2d2;
+    text-align: center;
+    padding: 17px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}

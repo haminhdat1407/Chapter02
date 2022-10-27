@@ -1,0 +1,110 @@
+///*------------------------------------------------------------
+//Anchor position
+//------------------------------------------------------------*/
+//.u-anchor:before {
+//	content:"";
+//	margin-top: -100px;
+//	padding-top: 100px;
+//}
+
+//------------------------------------------------------------
+// margin
+//------------------------------------------------------------
+
+//------------------------------------------------------------
+// color
+//------------------------------------------------------------
+.u- {
+    &bg__fa {
+        background-color: #fafafa;
+    }
+
+    &bg__pink {
+        background-color: #ffdfdf;
+    }
+
+    &bg__yellow {
+        background-color: #fff799;
+    }
+
+    &bg__green {
+        background-color: #a3d39c;
+    }
+
+    &bg__gray {
+        background-color: #ece6e6;
+
+        &1 {
+            background-color: #d3d7d9;
+        }
+    }
+
+    &bg__blue {
+        background-color: #6dcff6;
+    }
+    
+
+}
+
+.u- {
+    &circle {
+        &::before {
+            content: "\f111";
+            font-size: 0.6rem;
+            
+        }
+    }
+
+    &angleright {
+        &::before {
+            content: "\f105";
+            font-size: 0.9rem;
+            margin-right: 9px;
+        }
+    }
+
+    &link {
+        &::before {
+            content: "\f0c1";
+            font-size: 1rem;
+            margin-right: 9px;
+
+        }
+    }
+    &message{
+        &::before {
+            content: "\f075";
+
+        }
+    }
+
+    &text {
+        &__blue {
+            color: #758dfb;
+        }
+
+        &__red {
+            color: #f00;
+            text-decoration: underline;
+        }
+
+        &__orange {
+            color: #ff9c00;
+            text-decoration: underline;
+
+        }
+       
+    }
+    &blue{
+        color: #11638a;
+    }
+    &pink{
+        margin-top: 29px;
+        color: #f5989d;
+        margin-bottom: 9px;
+    }
+    
+}
+
+
+

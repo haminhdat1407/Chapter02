@@ -1,0 +1,43 @@
+.c-title1 {
+  margin-top: 21px;
+  background-color: #bcd5e1;
+  border-color: #11638a;
+  margin-bottom: 23px;
+}
+.c-des {
+  font-size: 1.5rem;
+  color: rgb(34, 34, 34);
+  line-height: 1.33;
+  margin-top: 8px;
+  font-weight: 500;
+  &__red {
+    color: #c40000;
+  }
+}
+.c-text {
+  margin-top: 51px;
+  font-size: 1.6rem;
+  line-height: 1;
+  &::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 6px;
+    font-size: 1.9rem;
+    line-height: 1;
+  }
+
+}
+.c-note{
+  margin-top: 16px;
+  padding: 17px 27px;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 500px;
+  border: 1px solid;
+}
+.c-title2 {
+  margin-top: 69px;
+  background-color: #ffe8e9;
+  border-color: #f5989d;
+  margin-bottom: 23px;
+}

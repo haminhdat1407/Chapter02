@@ -1,0 +1,39 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: $base-width;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+/* Main menu
+------------------------------------------------------------*/
+.c-gnav {
+    opacity: 0.7;
+
+    ul {
+    }
+
+    li {
+        display: inline-block;
+
+        + li {
+            margin-left: 28px;
+        }
+    }
+
+    a {
+        font-size: 1.4rem;
+        text-transform: capitalize;
+    }
+
+    .is-active {
+        font-weight: bold;
+    }
+}

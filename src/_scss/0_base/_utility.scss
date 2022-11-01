@@ -71,9 +71,24 @@
 
         }
     }
-    &message{
+
+    &message {
         &::before {
             content: "\f075";
+
+        }
+    }
+
+    &palatte {
+        &::before {
+            content: "\f53f";
+
+        }
+    }
+
+    &seedling {
+        &::before {
+            content: "\f4d8";
 
         }
     }
@@ -95,13 +110,15 @@
         }
        
     }
-    &blue{
+
+    &blue {
         color: #11638a;
     }
-    &pink{
+
+    &pink {
         margin-top: 29px;
         color: #f5989d;
-        margin-bottom: 9px;
+        margin-bottom: 8px;
     }
     
 }

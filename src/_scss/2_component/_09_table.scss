@@ -4,6 +4,29 @@ table
 
 /*
 ------------------------------------------------------------*/
-.c-table1 {
-	
+
+table {
+    
+
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 9px 29px;
+    font-size: 1.4rem;
+    color: rgb(34, 34, 34);
+}
+
+td:first-child {
+    padding: 10px 20px;
+}
+
+th {
+    background-color: #acd373;
+    border: 1px solid #ccc;
+    color: rgb(255, 255, 255);
+    
 }

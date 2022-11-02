@@ -166,6 +166,7 @@ img {
   }
 }
 button:hover{
+  opacity: 0.7;
   cursor: pointer;
 }
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
@@ -194,6 +195,7 @@ button:hover{
 ------------------------------------------------------------*/
 .c-gnav {
   opacity: 0.7;
+  font-weight: 500;
 }
 .c-gnav li {
   display: inline-block;
@@ -202,11 +204,12 @@ button:hover{
   margin-left: 28px;
 }
 .c-gnav a {
-  font-size: 1.4rem;
   text-transform: capitalize;
+  font-size: 1.4rem;
+
 }
-.c-gnav .is-active {
-  font-weight: 700;
+.is-active {
+  font-weight: 700 ;
 }
 /*------------------------------------------------------------
 footer
@@ -221,10 +224,10 @@ footer
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 34px 0;
+  margin-top: 36px;
   -webkit-column-gap: 44px;
   -moz-column-gap: 44px;
-  column-gap: 44px;
+  column-gap: 48px;
   padding-bottom: 36px;
   font-weight: 400;
 }
@@ -235,7 +238,7 @@ footer
   padding-bottom: 4px;
 }
 .c-box__item {
-  margin-top: 1px;
+  /* margin-top: 1px; */
   font-size: 1.4rem;
   width: calc((100% - 86px) / 3);
 }
@@ -249,6 +252,8 @@ footer
   font-weight: 900;
   color: #000;
   margin-right: 5px;
+  vertical-align: middle;
+    flex-direction: row;
 }
 .c-copyright {
   border-top: 1px solid #d2d2d2;
@@ -281,7 +286,7 @@ sidebar
   font-size: 1.4rem;
   color: rgb(0, 0, 0);
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 500;
 }
 .c-breadcrumb__text::before {
   font-family: "Font Awesome 5 Free";
@@ -300,13 +305,13 @@ sidebar
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
   content: "\f105";
-  padding-left: 8px;
+  padding-left: 9px;
   padding-right: 7px;
 }
 /* layout
 ------------------------------------------------------------*/
 body {
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: 1.4rem;
   min-width: 1000px;
   line-height: 1.5;
@@ -359,8 +364,6 @@ body {
 }
 .c-top {
   margin-top: 22px;
-  color: #000;
-  font-weight: 700;
 }
 .c-bottom {
   padding: 6px 0;
@@ -414,7 +417,7 @@ btn
   font-size: 3.2rem;
   color: rgb(0, 0, 0);
   font-weight: 700;
-  line-height: 0.625;
+  line-height: 0.6;
 }
 /*------------------------------------------------------------
 title
@@ -437,7 +440,7 @@ text
 /*
 ------------------------------------------------------------*/
 .c-sectiontitle {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   display: block;
   padding: 8px 20px 5px;
@@ -477,7 +480,7 @@ list
 /*
 ------------------------------------------------------------*/
 .c-list {
-  margin-top: 25px;
+  margin-top: 26px;
   font-size: 1.5rem;
   color: #222 !important;
   line-height: 2;
@@ -485,7 +488,7 @@ list
   font-weight: 500;
 }
 .c-list ol li::marker {
-  color: #facdd0;
+  color: #f5989d;
 
 }
 .c-list .c-subsection {
@@ -493,7 +496,7 @@ list
 }
 
 .c-list .c-counter {
-  margin-left: 20px;
+  margin-left: 19px;
   counter-reset: section 3;
 }
 .c-list .c-counter li {
@@ -501,7 +504,7 @@ list
   list-style: none;
 }
 .c-list .c-counter li::before {
-   color: #facdd0;
+   color: #f5989d;
   counter-increment: subsection;
   content: counter(section) "." counter(subsection) " ";
 }
@@ -606,7 +609,7 @@ button:hover{
 }
 .c-news__btn {
   border: none;
-    padding: 17px 56px;
+  padding: 16px 56px;
   background-color: #afafaf;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,7 +621,7 @@ button:hover{
   margin-top: 10px;
   border-radius: 5px;
   position: absolute;
-  
+  font-size: 1.5rem;
 }
 
 .c-news__viewmore {
@@ -728,12 +731,30 @@ button:hover{
 .p-link__mg {
   margin-top: 16px;
 }
+.p-link__title{
+  padding: 6px 0;
+  text-align: center;
+  font-size: 3.2rem;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  line-height: 2;
+  background-color: #6dcff6;
+  width: 100%;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  margin-top: 32px;
+  margin-bottom: 49px;
+}
 .c-link__list {
   margin-top: 17px;
-  row-gap: 44px;
+  row-gap: 47px;
 }
 .c-link__list2 {
   row-gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  margin-top: 31px;
 }
 .p-link__item {
   width: calc((100% - 60px) / 4);
@@ -774,7 +795,7 @@ button:hover{
 .c-content {
   font-size: 1.4rem;
   color: rgb(34, 34, 34);
-  line-height: 1.429;
+  line-height: 1.4;
   font-weight: 500;
   margin-top: 26px;
   display: block;
@@ -784,8 +805,8 @@ button:hover{
 }
 .c-link2 {
   margin-top: 54px;
-  line-height: 1.4;
-  padding-bottom: 8px;
+  line-height: 1.2;
+  padding-bottom: 10px;
 }
 .c-table {
   margin-top: 29px;
@@ -803,24 +824,30 @@ button:hover{
   font-size: 1.6rem;
   color: rgb(34, 34, 34);
   font-weight: 700;
-  line-height: 1.25;
-  padding: 10px 14px;
+  line-height: 1.2;
+  padding: 12px 14px;
   background-color: #ece6e6;
 }
 .c-table__des {
   margin-top: 21px;
   font-size: 1.4rem;
   color: rgb(34, 34, 34);
-  line-height: 1.429;
+  line-height: 1.4;
   font-weight: 500;
 }
 .c-table__width {
   width: 100%;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 124px;
+  margin-bottom: 12px;
   font-size: 1.4rem;
   font-weight: 500;
+}
+.c-table__width th{
+  background-color: #acd373;
+    border: 1px solid #ccc;
+    color: rgb(255, 255, 255);
+    padding: 13px 29px 7px 29px;
 }
 .c-title1 {
   margin-top: 21px;
@@ -854,26 +881,27 @@ button:hover{
   line-height: 1;
 }
 .c-note {
-  margin-top: 18px;
-  padding: 20px 27px;
+  margin-top: 16px;
+  padding: 19px 27px;
   font-size: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.3;
   border: 1px solid;
   color: #ffa0a5;
   font-weight: 500;
   border-radius: 4px;
+  
 }
 .c-note::before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 600;
+  font-weight: 900;
   content: "\f10d";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .c-note::after {
   font-family: "Font Awesome 5 Free";
-  font-weight: 600;
+  font-weight: 900;
   content: "\f10e";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .c-title2 {
   margin-top: 69px;
@@ -886,6 +914,7 @@ button:hover{
 }
 .p-link2 td {
   width: 275px;
+  padding: 11px 0 9px 0;
 }
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-
@@ -921,12 +950,13 @@ button:hover{
 .u-angleright::before {
   content: "\f105";
   font-size: 0.9rem;
-  margin-right: 9px;
+  margin-right: 7px;
 }
 .u-link::before {
   content: "\f0c1";
   font-size: 1rem;
-  margin-right: 9px;
+  margin-right: 7px;
+  margin-left: -1px;
 }
 .u-message::before {
   content: "\f075";
@@ -952,7 +982,9 @@ button:hover{
   color: #11638a;
 }
 .u-pink {
-  margin-top: 29px;
+  margin-top: 31px;
   color: #f5989d;
-  margin-bottom: 8px;
+}
+.u-mgleft4px{
+margin-left: 4px;
 }
